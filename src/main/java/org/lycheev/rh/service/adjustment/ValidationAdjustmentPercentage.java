@@ -1,4 +1,4 @@
-package org.lycheev.rh.service;
+package org.lycheev.rh.service.adjustment;
 
 import org.lycheev.rh.ValidationException;
 import org.lycheev.rh.model.Employee;

@@ -64,4 +64,8 @@ public class Employee {
     public void setDateOfLastAdjustment(LocalDate dateOfLastAdjustment) {
         this.dateOfLastAdjustment = dateOfLastAdjustment;
     }
+
+    public void promote(Job nextInTheHierarchy) {
+        this.setJob(nextInTheHierarchy);
+    }
 }
