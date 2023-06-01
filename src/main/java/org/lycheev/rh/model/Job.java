@@ -1,4 +1,4 @@
-package org.lycheev.model;
+package org.lycheev.rh.model;
 
 public enum Job {
     ASSISTANT,

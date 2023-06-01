@@ -1,4 +1,4 @@
-package org.lycheev;
+package org.lycheev.rh;
 
 import java.io.Serial;
 

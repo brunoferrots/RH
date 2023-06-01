@@ -1,6 +1,6 @@
-package org.lycheev.model;
+package org.lycheev.rh.model;
 
-import org.lycheev.ValidationException;
+import org.lycheev.rh.ValidationException;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
@@ -20,12 +20,8 @@ public class Employee {
         this.salary = salary;
     }
 
-    public void adjustmentSalary(BigDecimal increase) {
-        BigDecimal adjustmentPercentage = increase.divide(salary, RoundingMode.HALF_UP);
-        if (adjustmentPercentage.compareTo(new BigDecimal("0.4")) > 0) {
-            throw new ValidationException("Adjustment cannot exceed 40% of the salary!");
-        }
-        this.salary = this.salary.add(increase);
+    public void adjustmentSalary(BigDecimal newSalary) {
+        this.salary = newSalary;
         this.dateOfLastAdjustment = LocalDate.now();
     }
 
